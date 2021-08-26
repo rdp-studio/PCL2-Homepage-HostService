@@ -53,14 +53,24 @@ def sub():
             sub = f.read()
     except:
         abort(500)
-    sub = sub + "\n" + '''<StackPanel Margin="0,10,0,20" HorizontalAlignment="Center" Orientation="Horizontal">
+    sub = sub + "\n" + '''<Grid Margin="0,0,0,15">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="1*"></ColumnDefinition>
+			<ColumnDefinition Width="100"></ColumnDefinition>
+			<ColumnDefinition Width="1*"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
+		<TextBlock Text="免 费 PCL2 主 页 托 管" HorizontalAlignment="Center" FontSize="14" Foreground="{DynamicResource ColorBrush5}" Grid.Column="1" VerticalAlignment="Center" />
+		<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+	</Grid>
+<StackPanel Margin="0,10,0,20" HorizontalAlignment="Center" Orientation="Horizontal">
 	<local:MyButton Width="300" Height="35" Padding="13,0,13,0" Text="免费托管我的主页！" Margin="0,0,10,0" EventType="打开网页" EventData="http://frp.rdpstudio.top:233" ToolTip="点击免费托管你的主页" />
 	<local:MyButton Width="200" Height="35" Padding="13,0,13,0" Text="刷新主页" EventType="刷新主页" Margin="0,0,10,0" ToolTip="点击刷新" />
 	<local:MyButton Width="200" Height="35" Padding="13,0,13,0" Text="托管服务反馈" EventType="打开网页" EventData="https://github.com/rdp-studio/PCL2-Homepage-HostService/issues/new" ToolTip="点击前往 Github 提交反馈" />
 </StackPanel>
 <Border Background="#CCFFFFFF" Height="140" Margin="-25,30,-25,-10" BorderThickness="0,2,0,0" BorderBrush="#AAAAAAAA">
 	<StackPanel Margin="40,15,0,10">
-		<TextBlock Text="由 PCL2主页免费托管 提供托管支持" FontSize="16" Margin="0,5,5,5" />
+		<TextBlock Text="由 免费PCL2主页托管 提供托管支持" FontSize="16" Margin="0,5,5,5" />
 		<TextBlock Text="托管服务By：RDPStudio" />
 
 		<StackPanel Orientation="Horizontal" Margin="0,2,0,0">
