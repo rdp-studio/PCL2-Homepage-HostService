@@ -60,9 +60,14 @@ def sub():
 			<ColumnDefinition Width="1*"></ColumnDefinition>
 		</Grid.ColumnDefinitions>
 		<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
-		<TextBlock Text="免 费 PCL2 主 页 托 管" HorizontalAlignment="Center" FontSize="14" Foreground="{DynamicResource ColorBrush5}" Grid.Column="1" VerticalAlignment="Center" />
+		<TextBlock Text="免 费 托 管" HorizontalAlignment="Center" FontSize="14" Foreground="{DynamicResource ColorBrush5}" Grid.Column="1" VerticalAlignment="Center" />
 		<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
 	</Grid>
+	<local:MyCard Margin="0,0,0,15" Title="📢 Ads" CanSwap="True" IsSwaped="False">
+		<StackPanel Margin="30,40,30,10">
+			<TextBlock Text="📢 我们怎么可能接到广告呢？" Padding="15,0,0,0" Margin="0,0,0,5" />
+		</StackPanel>
+	</local:MyCard>
 <StackPanel Margin="0,10,0,20" HorizontalAlignment="Center" Orientation="Horizontal">
 	<local:MyButton Width="300" Height="35" Padding="13,0,13,0" Text="免费托管我的主页！" Margin="0,0,10,0" EventType="打开网页" EventData="http://frp.rdpstudio.top:233" ToolTip="点击免费托管你的主页" />
 	<local:MyButton Width="200" Height="35" Padding="13,0,13,0" Text="刷新主页" EventType="刷新主页" Margin="0,0,10,0" ToolTip="点击刷新" />
