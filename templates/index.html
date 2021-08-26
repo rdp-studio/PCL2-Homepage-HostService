@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <!-- MDUI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+      integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+      crossorigin="anonymous"
+    />
+    <title>免费PCL2主页托管</title>
+    <!-- BrowserHappy -->
+  <script>
+    var browsehappy_config = {
+      ie: 12,
+      type: 'box',
+      debug: false,
+      tip: "站点目前不支持 IE。请 ",
+      show: ['firefox', 'chrome']
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/a632079/browserhappy@0.0.1/browserhappy.min.js"></script>
+  </head>
+  <body class="mdui-appbar-with-tab-larger">
+<div class="mdui-appbar mdui-appbar-fixed">
+  <div class="mdui-toolbar mdui-color-blue">
+    <a href="javascript:;" class="mdui-typo-title">免费PCL2主页托管</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <iframe src="https://ghbtns.com/github-btn.html?user=rdp-studio&repo=PCL2-Homepage-HostService&type=star&count=true" frameborder="0" scrolling="0" width="90px" height="20px"></iframe>
+    <p>
+    <style>.butt{display:inline-block;padding:.5rem 1.25rem;font-weight:700;color:#fff;text-decoration:none;background-color:#0366d6;border:1px solid #0366d6;border-radius:6px}.butt:hover{text-decoration:none;background-color:#005cc5}.butt:active{border-color:#005cc5;box-shadow:inset 0 5px 10px rgba(0,0,0,0.2)}</style>
+    <a href="https://github.com/rdp-studio/PCL2-Homepage-HostService" class="butt">GitHub</a></p>
+  </div>
+  <div class="mdui-tab mdui-color-blue" mdui-tab>
+    <a href="#h" class="mdui-ripple mdui-ripple-white">
+      <i class="mdui-icon material-icons">home</i>
+      <label>主页</label>
+    </a>
+    <a href="#c" class="mdui-ripple mdui-ripple-white">
+      <i class="mdui-icon material-icons">domain</i>
+      <label>创建订阅</label>
+    </a>
+    <a href="#e" class="mdui-ripple mdui-ripple-white">
+      <i class="mdui-icon material-icons">build</i>
+      <label>修改订阅</label>
+    </a>
+  </div>
+</div>
+    <div class="mdui-container mdui-appbar-with-tab-larger">
+    <center id="h">
+    <h1 style="color: #3c5675;">欢迎使用！</h1>
+    </center>
+<div id="c">
+    <form action="/write" method="post">
+<input type="text" name="type" id="type" class="mdui-textfield-input" placeholder="类型" value="create" style="display:none;" />
+<div class="mdui-textfield mdui-textfield-floating-label">
+  <label class="mdui-textfield-label">订阅名称</label>
+  <input class="mdui-textfield-input" type="text" id="name" name="name" required/>
+</div>
+<div class="mdui-textfield mdui-textfield-floating-label">
+  <label class="mdui-textfield-label">代码</label>
+  <textarea class="mdui-textfield-input" id="code" name="code" required></textarea>
+</div>
+  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue">提交</button>
+    </form>
+</div>
+<div id="e">
+    <form action="/write" method="post">
+<input type="text" name="type" id="type" class="mdui-textfield-input" placeholder="类型" value="edit" style="display:none;" />
+<div class="mdui-textfield mdui-textfield-floating-label">
+  <label class="mdui-textfield-label">订阅名称</label>
+  <input class="mdui-textfield-input" type="text" id="name" name="name" required/>
+</div>
+<div class="mdui-textfield mdui-textfield-floating-label">
+  <label class="mdui-textfield-label">代码</label>
+  <textarea class="mdui-textfield-input" id="code" name="code" required></textarea>
+</div>
+<div class="mdui-textfield mdui-textfield-floating-label">
+  <label class="mdui-textfield-label">修改密钥</label>
+  <input class="mdui-textfield-input" type="text" id="key" name="key" required/>
+</div>
+  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-blue">提交</button>
+    </form>
+</div>
+      
+    <br/>
+    <div class="mdui-divider"></div>
+    <p>Sponsored by RDPCloud | Copyright &copy; 2019-2021 RDPStudio.</p>
+    </div>
+    <!-- MDUI JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+      integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
